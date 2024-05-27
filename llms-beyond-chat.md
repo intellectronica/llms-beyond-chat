@@ -1,4 +1,4 @@
-## Outline
+# Outline
 1. Introduction: LLMs as intelligent computational devices [10m] 
 	1. Review of capabilities 
 	2. Motivation for using LLMs in non-interactive scenarios
@@ -25,3 +25,7 @@
 	2. Planning a multi-step operation 
 	3. Exception-handling 
 7. Summary and Q&A [10m]
+
+# Slides
+---
+---
