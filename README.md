@@ -1,8 +1,11 @@
-# LLMs Beyond Chat
+# LLMs: Beyond Chat
 
-Talk / Tutorial for MLADS 2024
+This tutorial covers using [Pydantic](https://docs.pydantic.dev/) and [Instuctor](https://python.useinstructor.com/) with OpenAI GPT-4o to use the LLM as a software device for implementing different tasks.
 
-- **Notebook**: [llms-beyond-chat.ipynb](llms-beyond-chat.ipynb) - the notebook to share with participants.
+- **Notebook**:
+  - [llms-beyond-chat.ipynb](llms-beyond-chat.ipynb) - the notebook with complete solutions and outputs.
+  - [llms-beyond-chat---practice.ipynb](llms-beyond-chat---practice.ipynb) - the tutorial notebook with solutions and outputs ommitted. Use this version to complete the tutorial yourself.
 
-  To run: `cp dot.env .env`, update the variables to an Azure Open AI GPT-4-turbo-2024-04-09 deployment, launch with Jupyter.
-- **Talk**: [llms-beyond-chat.md](llms-beyond-chat.md) - notes for the talk, should eventually be converted to slides and scipt, and maybe also an article.
+To run: `cp dot.env .env`, update the variables to an Azure Open AI GPT-4o, and launch with Jupyter.
+
+*You can use older GPT-4 versions without a problem (they're just slower and more expensive), or use a standard OpenAI endpoint by substituting the `AzureOpenAI` object with an `OpenAI` object from the OpenAI SDK.*
