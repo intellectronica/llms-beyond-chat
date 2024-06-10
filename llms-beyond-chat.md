@@ -13,12 +13,16 @@ June 2024
 # Pattern: Chat -> AI as Software
 
 - __2022__: GPT-3 … but no-one cares​
-- __2023__: ChatGPT … and now it’s all about chat​ 
-	   Chat is not going anywhere​
-	   It’s still the killer app for LLMs​
-	   But…​
-- __2024__: LLMs can do so much more than chat …​  
-	   because LLMs are a new way to do software
+- __2023__: ChatGPT … and now it’s all about chat​
+
+	Chat is not going anywhere​
+
+	It’s still the killer app for LLMs​
+
+	But…​
+- __2024__: LLMs can do so much more than chat …​
+	
+	because LLMs are a new way to do software
 
 ---
 
