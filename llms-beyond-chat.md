@@ -137,16 +137,16 @@ June 2024
 # Some Other Zhings to Explore
 
 - **Structured Input / Output & Control**
-	- Instructor
-	- LQML
-	- Outlines
-	- Magnetic
-	- Guidance
-- **DSPy** (optimising compiler for prompting)
+	- Instructor - [useinstructor.com](https://useinstructor.com/) <-- this is what we'll be using today
+	- LQML - [lmql.ai](https://lmql.ai/)
+	- Outlines - [outlines-dev.github.io/outlines](https://outlines-dev.github.io/outlines/)
+	- Magnetic - [magentic.dev](https://magentic.dev/)
+	- Guidance - [github.com/guidance-ai/guidance](https://github.com/guidance-ai/guidance)
+- **DSPy** (optimising compiler for prompting) - [github.com/stanfordnlp/dspy](https://github.com/stanfordnlp/dspy)
 - **Agents**
-	- AutoGen
-	- LangGraph
-	- CrewAI
+	- AutoGen - [microsoft.github.io/autogen](https://microsoft.github.io/autogen/)
+	- LangGraph - [python.langchain.com/docs/langgraph](https://python.langchain.com/docs/langgraph/)
+	- CrewAI - [www.crewai.com](https://www.crewai.com/)
 
 ---
 
