@@ -156,3 +156,131 @@ June 2024
 	- **llms-beyond-chat---practice**.ipynb - the tutorial without solutions or outputs, use this if you want to practice in real time
 
 ---
+
+# Setting up Azure Open AI, Instructor, and Helper Functions
+
+- Instructor patches the OpenAI client to return a Pydantic model (inherits from BaseModel)
+- The `llm()` function calls the LLM API with a model, for schema definition and output
+- `print_schema`, `print_result`, `visualize_graph`, and `print_tree` for printing things nicely in the notebook
+
+---
+
+# Working with Text: Translation
+
+- These examples are completed in both notebooks - to help us get used to the format we'll use throughout the tutorial
+- Look at the model, and how it is translated into a JSON schema (this is the schema that is being passed to the API)
+- See how we can complete the task with very little prompting and get the result as an instance of the model
+- The `List` and `Enum` types of Python are useful for more complex structure
+- A convention we'll often use - system prompt for "programming", user promt for "input" (just a convention)
+
+---
+
+# Working with Text: Normalisation
+
+- If you're using the practice notebook, now you can start writing your own calls
+- Translation between languages or between styles within the same language is more-or-less the same thing
+- So you already know how to complete this task
+- *remember that you can always look at the master notebook and compare your solution*
+
+---
+
+# Unstructured Data: Parsing Addresses
+
+- Look at the first example. No prompting! We can get a lot done with just a good schema definition.
+
+  *Don't expect to complete all examples with no prompting at all, though*
+- Parsing many addresses is just about as simple as doing one.
+
+---
+
+# Unstructured Data: Building a Knowledge Graph
+
+- With minimal prompting and a good schema definition, we can get the LLM to build a knowledge graph representation of the information in the text.
+- Remember that you can use the `visualize_graph` function to render a graphic in the notebook. It expects a graph object, that has two lists: nodes, and edges.
+
+---
+
+# Unstructured Data: Parsing a Grammar Tree
+
+- This used to be a serious challenge in computational linguistics, but is actually easy for an LLM.
+- It's a more complex structure, where we have nested elements and potentially recursion.
+- A simplified grammar tree of the sentence `the quick brown fox jumps over the lazy dog` would be something like:
+  - Verb Phrase
+	  - Noun Phrase
+		  - Determiner: *the*
+			- Adjectives:
+			  - *quick*
+				- *brown*
+			- Noun: *fox*
+		- Verb: *jumps*
+		- Preposition Phrase
+			- Preposition: *over*
+			- Noun Phrase:
+				- Determiner: *the*
+				- Adjectives:
+					- *lazy*
+				- Noun: *dog*
+
+---
+
+# Synthetic Data Generation
+
+- Generating data on demand is incredibly valuable for training and evaluation projects
+- Easy when you can control precisely the parameters and format of what you're generating
+
+---
+
+# Decision Making: Sentiment Analysis
+
+- Sentiment Analysis is a form of decision-making. We need to pass judgement on a piece of data.
+- The LLM exhibits "self reflection" (only by analogy) when it is able to also estimate its own confidence in a decision.
+- Similar tasks are very common and present a great opportunity to use LLMs for automation and decision support.
+
+---
+
+# Decision Making: Classification
+
+- Classification (in this case, assigning tags to items) is also a form of decision-making
+- Note that we are relying on both constraints that we introduce in the request, and knowledge of the world that is already available to the model
+- In more complex scenarios, where we can't rely on knowledge that is "baked into" the model, we might need to prompt with a lot more detail and use in-context learning.
+
+---
+
+# Decision Making: Clustering
+
+- Clustering, as an example, is interesting, because it contrasts with implementations that use predictive AI/ML
+- What the LLM can do easily, which isn't straightforward to do with predictive AI, is explain its choices (in this case, by giving each cluster a title)
+- We may have more confidence in an AI system and give it more freedom to operate autonomously if we understand why it is making the choices it does
+
+---
+
+# Planning
+
+- A lot of interesting processes can't be completed using a hard-coded recipe and require some planning
+- In this example, the LLM is quite good at planning how to use different actions at the correct order for different scenarios
+- Agent systems often rely on planning phases to break down the work to steps
+
+---
+
+# Shall We Play a Game?
+
+- Tic-tac-toe doesn't require a lot of intelligence, in fact it is easy to implement with traditional coding, but it serves as a good simple example
+- The LLM is doing all of the heavy lifting like assessing the state of the game and deciding on the next move based on a defined strategy
+- LLMs have been shown to play Chess well, as well as games that aren't part of the training (with good prompting)
+- By interacting with part of the world outside the LLM (the tic-tac-toe board, in this case), we can automate a cognitive task
+
+---
+
+# Summary
+
+- AI is Software
+- LLMs are a new kind of VM
+- Using structured input/output we can get LLMs to do really useful things
+
+## Some ideas for followup
+
+- Try these or similar examples with other LLMs (Phi-3, GPT-3.5, Llama-3, Mixtral, ...)
+- Identify more complex tasks you can achieve with this approach. How much can you rely on definitions? When do you need to invest more in prompting?
+- How can you evaluate and test your integrated solution? With very clear input and output it should be straightforward to test and gain confidence in the accuracy and reliability of your system.
+
+---
