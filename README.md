@@ -6,6 +6,4 @@ This tutorial covers using [Pydantic](https://docs.pydantic.dev/) and [Instuctor
   - [llms-beyond-chat.ipynb](llms-beyond-chat.ipynb) - the notebook with complete solutions and outputs.
   - [llms-beyond-chat---practice.ipynb](llms-beyond-chat---practice.ipynb) - the tutorial notebook with solutions and outputs ommitted. Use this version to complete the tutorial yourself.
 
-To run: `cp dot.env .env`, update the variables to an Azure Open AI GPT-4o, and launch with Jupyter.
-
-*You can use older GPT-4 versions without a problem (they're just slower and more expensive), or use a standard OpenAI endpoint by substituting the `AzureOpenAI` object with an `OpenAI` object from the OpenAI SDK.*
+To run: `cp dot.env .env`, update the variables to an Open AI (or Azure Open AI) GPT-4o, and launch with Jupyter.
